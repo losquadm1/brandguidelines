@@ -5,17 +5,25 @@ import "@fontsource/karla";
 ---
 
 <style is:global>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Calistoga&family=Play:wght@400;700&family=Stalinist+One&display=swap');
+
+@font-face {
+  font-family: "NetflixSans";
+  src:
+    local("Netflix Sans Medium"),
+    url("/Netflix Sans Medium.otf") format("otf");
+}
   /* We can use this style tag to set up colors, fonts, etc. */
   :root {
-    --color-background: rgb(24, 0, 24);
+    --color-background: rgb(0, 0, 0);
     --color-text: rgb(240, 240, 240);
-    --color-accent: rgb(0, 200, 255);
-    --color-focus-ring: rgb(255, 0, 255);
+    --color-accent: #B81D24;
+    --color-focus-ring: rgb(255, 255, 255);
 
-    --font-body: "Karla", sans-serif;
-    --font-headings: "Karla", sans-serif;
+    --font-body: "NetflixSans", sans-serif;
+    --font-headings: "Bebas Neue", sans-serif;
 
-    font-size: 18px;
+    font-size: 19px;
 
     /* These sizes are used by the Container component to set up the page container */
     --size-page-width: 800px;
@@ -28,17 +36,37 @@ import "@fontsource/karla";
     color: var(--color-text);
     font-family: var(--font-body);
   }
-  h1,
+ 
   h2,
-  h3,
+  
   h4,
   h5,
   h6 {
-    color: var(--color-accent);
+  font-family: var(--font-body);
+    color: var(--color-text);
+    padding: 20px 0px 0px 0px
   }
 
+  h1{
+  font-family: var(--font-headings);
+    color: var(--color-accent);
+    font-size: 60px;
+    border-bottom: 1px solid var(--color-accent);
+  }
+
+  h3{
+      font-family: var(--font-body);
+    color: var(--color-text);
+    font-size: 20px;
+  }
   /* default focus ring styles */
   *:focus-visible {
     outline: 3px solid var(--color-focus-ring);
+  }
+
+  p{
+    line-height: 1.55;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
 </style>
