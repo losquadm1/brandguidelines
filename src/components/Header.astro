@@ -16,9 +16,9 @@
 
 <script>
     const tocList = document.querySelector('.toc-list');
-    const headings = Array.from(document.querySelectorAll('h1, h2'));
+    const headings = Array.from(document.querySelectorAll('h1'));
 
-    const slugify = (value) =>
+    const slugify = (value: string) =>
         value
             .toLowerCase()
             .replace(/&/g, 'and')
@@ -31,7 +31,7 @@
             .filter(Boolean)
     );
 
-    const getUniqueId = (baseValue) => {
+    const getUniqueId = (baseValue: string) => {
         const baseId = baseValue || 'section';
         if (!usedIds.has(baseId)) {
             usedIds.add(baseId);
@@ -68,6 +68,26 @@
         item.appendChild(link);
         tocList.appendChild(item);
     });
+
+    const tocDetails = document.querySelector('.toc-panel') as HTMLDetailsElement | null;
+    const tocSummary = tocDetails?.querySelector('summary');
+    let keyboardNavigationActive = false;
+
+    window.addEventListener('keydown', () => {
+        keyboardNavigationActive = true;
+    });
+
+    window.addEventListener('pointerdown', () => {
+        keyboardNavigationActive = false;
+    });
+
+    if (tocDetails && tocSummary) {
+        tocSummary.addEventListener('focus', () => {
+            if (keyboardNavigationActive) {
+                tocDetails.open = true;
+            }
+        });
+    }
 </script>
 
 <style>
@@ -125,6 +145,12 @@ h1 {
     position: relative;
 }
 
+.toc-panel summary:focus-visible,
+.toc-item a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
 .toc-panel summary::-webkit-details-marker {
     display: none;
 }
@@ -137,6 +163,12 @@ h1 {
     transform: translateY(-50%);
     transition: transform 0.4s ease;
     margin-right: 69px;
+}
+
+@media (max-width: 430px) {
+    .toc-panel summary::after {
+        margin-right: 0px;
+    }
 }
 
 .toc-panel[open] summary::after {
