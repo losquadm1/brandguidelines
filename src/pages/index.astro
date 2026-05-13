@@ -5,50 +5,15 @@ import Container from "@components/Container.astro";
 import AstroLogo from "@assets/images/astro-logo-light-gradient.png";
 import { Content as SampleMarkdown } from "@content/sample-markdown.md";
 import { Image } from "astro:assets";
+import Header from "@components/Header.astro"
 ---
-
+<Header/>
 <Layout title="Netflix Yearly Report">
   <Container>
 
-<div class="title">
- <h1><img src="/image/logo.png" alt="Netflix">Yearly Report</h1>
-</div>
-
-<nav style="margin-bottom: 40px; padding: 20px; border: 0px solid #ffffff; border-radius: 8px;">
-<h1 style="margin-top: 0;">Table of Contents</h2>
-<ul class= toc style="line-height: 1.8;">
-<li><a href="#forward-looking-statements">Forward-Looking Statements</a></li>
-<li><a href="#item-1-business">Item 1. Business</a>
-<ul>
-<li><a href="#about-us">ABOUT US</a></li>
-<li><a href="#business-segments">BUSINESS SEGMENTS</a></li>
-<li><a href="#competition">COMPETITION</a></li>
-<li><a href="#intellectual-property">INTELLECTUAL PROPERTY</a></li>
-<li><a href="#regulation">REGULATION</a></li>
-<li><a href="#human-capital">HUMAN CAPITAL</a></li>
-<li><a href="#other-information">OTHER INFORMATION</a></li>
-</ul>
-</li>
-<li><a href="#item-1a-risk-factors">Item 1A. Risk Factors</a>
-<ul>
-<li><a href="#risks-related-to-our-business">Risks Related to Our Business</a></li>
-<li><a href="#risks-related-to-intellectual-property">Risks Related to Intellectual Property</a></li>
-<li><a href="#risks-related-to-information-technology">Risks Related to Information Technology</a></li>
-<li><a href="#risks-related-to-privacy">Risks Related to Privacy</a></li>
-<li><a href="#risks-related-to-liquidity">Risks Related to Liquidity</a></li>
-<li><a href="#risks-related-to-international-operations">Risks Related to International Operations</a></li>
-<li><a href="#risks-related-to-human-resources">Risks Related to Human Resources</a></li>
-<li><a href="#risks-related-to-our-stock">Risks Related to Our Stock</a></li>
-<li><a href="#risk-factors-related-to-wbd">Risk Factors Related to the WBD Transaction</a></li>
-</ul>
-</li>
-<li><a href="#part-ii">PART II</a></li>
-</ul>
-</nav>
-
 <h1 id="forward-looking-statements">Forward-Looking Statements</h1>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>This Annual Report on
+<p style='text-indent:.5in'><span lang=EN>This Annual Report on
 Form 10-K contains forward-looking statements within the meaning of the federal
 securities laws. These forward-looking statements include, but are not limited
 to, statements regarding: our core strategy; our ability to improve our content
@@ -90,14 +55,14 @@ may otherwise be required by law.</span></p>
 
 <h2 id="about-us">ABOUT US</h2>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>Netflix, Inc.
+<p style='text-indent:.5in'><span lang=EN>Netflix, Inc.
 (“Netflix”, the “Company”, “registrant”, “we”, or “us”) is one of the world’s
 leading entertainment services offering TV series, films, games and live
 programming across a wide variety of genres and languages. Members can play,
 pause and resume watching as much as they want, anytime, anywhere, and can
 change their plans at any time. </span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>Our core strategy is
+<p style='text-indent:.5in'><span lang=EN>Our core strategy is
 to grow our business globally within the parameters of our operating margin
 target. We strive to continuously improve our members' experience by offering
 compelling content that delights them and attracts new members. We aim to offer
@@ -109,7 +74,7 @@ enjoyable.</span></p>
 
 <h2 id="business-segments">BUSINESS SEGMENTS</h2>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We operate as one
+<p style='text-indent:.5in'><span lang=EN>We operate as one
 operating segment. Our revenues are primarily derived from monthly membership
 fees for services related to streaming content to our members. See Note 13,
 Segment and Geographic Information, in the accompanying notes to our
@@ -129,7 +94,7 @@ could choose in their moments of free time. We also compete against
 entertainment video providers and content producers in obtaining content for
 our service, both for licensed content and for original content projects. </span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>While consumers may
+<p style='text-indent:.5in'><span lang=EN>While consumers may
 maintain simultaneous relationships with multiple entertainment sources, we
 strive for consumers to choose us in their moments of free time. We have often
 referred to this choice as our objective of “winning moments of truth.” In
@@ -139,7 +104,7 @@ offerings.</span></p>
 
 <h2 id="intellectual-property">INTELLECTUAL PROPERTY</h2>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We regard our
+<p style='text-indent:.5in'><span lang=EN>We regard our
 trademarks, service marks, copyrights, patents, domain names, trade dress,
 trade secrets, proprietary technologies and similar intellectual property as
 important to our success. We use a combination of patent, trademark, copyright
@@ -161,7 +126,7 @@ prevail in any intellectual property disputes.</span></p>
 
 <h2 id="regulation">REGULATION</h2>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>The media landscape
+<p style='text-indent:.5in'><span lang=EN>The media landscape
 and the internet delivery of content have seen growing regulatory action.
 Historically, media has been highly regulated in many countries. We are seeing
 some of these legacy regulatory frameworks be updated and expanded to address
@@ -191,7 +156,7 @@ a number of employees engaged in content production, some of whom are part-time
 or temporary, and whose numbers fluctuate throughout the year and may be
 covered by collective bargaining agreements.</span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We believe an
+<p style='text-indent:.5in'><span lang=EN>We believe an
 important component of our success is our company culture as detailed in the
 “Netflix Culture Memo”, which was updated in 2024. Our culture is focused on
 excellence and creating an environment where talented people can thrive —
@@ -203,7 +168,7 @@ and skills — to work together as a dream team. For more people and cultures to
 see themselves reflected on screen, it is important that our employee base
 represents the communities we serve.</span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We aim generally to
+<p style='text-indent:.5in'><span lang=EN>We aim generally to
 pay our employees at their personal top of market, and they generally are able
 to choose the form of their compensation between cash and stock options. This
 permits employee compensation to be highly personalized and reflective of each
@@ -214,7 +179,7 @@ underrepresented groups are not being underpaid based on gender identity
 doing the same or similar work under comparable circumstances. We aim to
 rectify any pay gaps that we find through this analysis.</span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We care about the
+<p style='text-indent:.5in'><span lang=EN>We care about the
 health and well-being of our employees and their families and provide a variety
 of benefit programs based on region, including health benefits. In the U.S.,
 employees generally receive an annual cash health benefit allowance that they
@@ -227,7 +192,7 @@ employees.</span></p>
 
 <h2 id="other-information">OTHER INFORMATION</h2>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We maintain a website
+<p style='text-indent:.5in'><span lang=EN>We maintain a website
 at www.netflix.com. The contents of our website are not incorporated in, or
 otherwise to be regarded as part of, this Annual Report on Form 10-K. We make
 available, free of charge on our website, access to our Annual Report on Form 10-K,
@@ -239,7 +204,7 @@ with the Securities and Exchange Commission (“SEC”).</span></p>
 
 <h1 id="item-1a-risk-factors">Item 1A. Risk Factors</h1>
 
-<p class=MsoNormal style='text-indent:.5in'><i><span lang=EN>If any of the
+<p style='text-indent:.5in'><i><span lang=EN>If any of the
 following risks actually occur, our business, financial condition and results
 of operations could be harmed. In that case, the trading price of our common
 stock could decline, and you could lose all or part of your investment. </span></i></p>
@@ -248,7 +213,7 @@ stock could decline, and you could lose all or part of your investment. </span><
 
 <h3>If our efforts to attract and retain members are not successful, our business will be adversely affected.</h3>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We must continually
+<p style='text-indent:.5in'><span lang=EN>We must continually
 add new members both to replace canceled memberships and to grow our business
 beyond our current membership base. Our ability to continue to attract and
 retain members will depend in part on our ability to consistently provide our
@@ -269,7 +234,7 @@ professionally produced content, as well as more broadly against other sources
 of entertainment, such as social media, that our members could choose in their
 moments of free time.</span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>Members cancel our
+<p style='text-indent:.5in'><span lang=EN>Members cancel our
 service for many reasons, including a perception that they do not use the
 service sufficiently, that they need to cut household expenses, dissatisfaction
 with content, including any advertisements that may appear on our service, a
@@ -287,7 +252,7 @@ attracting new members, our business will be adversely affected.</span></p>
 
 <h3>If we do not continuously provide value to our members, including making improvements to our service in a manner that is favorably received by them, our revenue, results of operations and business will be adversely affected.</h3>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>If consumers do not perceive our service
+<p style='text-indent:.5in'><span lang=EN>If consumers do not perceive our service
 offering to be of value, including if we introduce new or adjust existing
 features, adjust pricing or service offerings, or change the mix of content in
 a manner that is not favorably received by them, we may not be able to attract
@@ -305,7 +270,7 @@ the expected benefits or generate additional revenue from such new products,
 experiences, and services, our future results of operations and growth may be
 adversely impacted. </span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We have and may, from
+<p style='text-indent:.5in'><span lang=EN>We have and may, from
 time to time, adjust our membership pricing, our membership plans, or our
 pricing model itself, including for example, the lowerpriced ad-supported
 subscription plan. Similarly, we have increased enforcement of and will
@@ -357,7 +322,7 @@ able to increase or maintain market share, revenues or profitability.</span></p>
 costs and potential liability in connection with content we acquire, produce,
 license and/or distribute through our service.</span></h3>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>As a producer and
+<p style='text-indent:.5in'><span lang=EN>As a producer and
 distributor of content, we face potential liability for negligence, copyright
 and trademark infringement, or other claims based on the nature and content of
 materials that we acquire, produce, license and/or distribute. We also may face
@@ -387,7 +352,7 @@ content on our service or discontinue or alter production of original content
 if we believe such content might not be well received by our members, is
 prohibited by law, or could be damaging to our brand or business.</span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>To the extent we do
+<p style='text-indent:.5in'><span lang=EN>To the extent we do
 not accurately anticipate costs or mitigate risks, including for content that
 we obtain but ultimately does not appear on or is removed from our service, or
 if we become liable for content we acquire, produce, license and/or distribute,
@@ -400,7 +365,7 @@ types of claims. </span></p>
 <h3><a name="_aqns4rvd38te"></a><span lang=EN>If we are not able to manage
 change and growth, our business could be adversely affected.</span></h3>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We are expanding our
+<p style='text-indent:.5in'><span lang=EN>We are expanding our
 operations, scaling our streaming service to effectively and reliably handle
 anticipated growth in both members and features related to our services, such
 as introducing games and advertising on our service, as well as offering live
@@ -431,7 +396,7 @@ reputation concerning our service and the content we offer, including any
 advertisements, we may not be able to attract or retain members, we may face
 regulatory scrutiny and our operating results may be adversely affected.</span></h3>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We believe that a
+<p style='text-indent:.5in'><span lang=EN>We believe that a
 positive reputation concerning our service is important in attracting and
 retaining members. To the extent our content, including any advertisements that
 may appear on our service, is perceived as low quality, offensive or otherwise
@@ -466,7 +431,7 @@ and personnel; inheriting liabilities and exposure to litigation; failure to
 realize anticipated benefits and expected synergies; and diversion of
 management’s time and attention, among other acquisition-related risks.</span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We may not be
+<p style='text-indent:.5in'><span lang=EN>We may not be
 successful in overcoming such risks, and such acquisitions and investments may
 negatively impact our business. In addition, if we do not complete an announced
 acquisition transaction or integrate an acquired business successfully and in a
@@ -489,7 +454,7 @@ operations” for additional information.</span></p>
 <h3><a name="_71isnedztmbs"></a><span lang=EN>We rely upon a number of partners
 to make our service available on their devices.</span></h3>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>We currently offer
+<p style='text-indent:.5in'><span lang=EN>We currently offer
 members the ability to receive streaming content through a host of
 internet-connected devices, including TVs, digital video players,TV set-top
 boxes and mobile devices. We have agreements with various cable, satellite and
@@ -644,83 +609,83 @@ advertising revenue may not grow as we expect. Our ability</span></p>
 various risks and will depend on a number of factors, including:</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>our ability to attract and retain advertisers;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>fluctuations in membership plan mix and member engagement;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>the quantity or quality of ads shown to our members;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>our ability to compete effectively for advertising spend;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>the impact of seasonal, cyclical or other shifts in advertising spend,
 including the impact of macroeconomic conditions;the availability, accuracy,
 utility, and security of analytics and measurement solutions offered by us or
 third parties that demonstrate the value of our</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>ads to marketers, or our ability to further improve such tools;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>changes in the way advertising on devices, connected TVs or on personal
 computers is measured or priced;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>adverse legal developments relating to advertising, targeting, or measurement
 tools;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>changes in third-party policies, which may negatively impact the
 ability to measure, deliver and select ads to be served;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>regulatory, legislative and industry developments relating to the
 collection and use of information and other privacy considerations, including</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>regulations related to ad targeting and measurement tools;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>any liability or reputational harm from advertisements shown on our
 service;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>our relationship with third-party service providers for the management,
 operation, sale and technology to support advertisements on our service;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>our ability to develop and expand an advertising sales and advertising
 technology organization team;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>our ability to develop the technology, data, and related infrastructure
 to support advertising and drive value to advertisers;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>the impact of our content and reputation on advertisers’ willingness to
 spend with us; and</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>any member dissatisfaction due to advertisements.</span></p>
 
 <h2 id="risks-related-to-intellectual-property"><span lang=EN>Risks Related to Intellectual
@@ -923,7 +888,7 @@ network providers, including technological or business-related disruptions, as
 well as cybersecurity threats and regulatory interference, could adversely
 impact the experience of our members. </span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><b><span lang=EN>&nbsp;</span></b></p>
+<p class=MsoNormal style='text-indent:.5in'><b><span lang=EN> </span></b></p>
 
 <h3><a name="_8os43tv798tv"></a><span lang=EN>We rely upon Amazon Web Services
 to operate certain aspects of our service and any disruption of or interference
@@ -942,8 +907,6 @@ AWS would impact our operations and our business would be adversely impacted.
 While the retail side of Amazon competes with us, we do not believe that Amazon
 will use the AWS operation in a manner to gain competitive advantage against
 our service, although if it were to do so it could harm our business. </span></p>
-
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>&nbsp;</span></p>
 
 <h3><a name="_5e8qyqe47y3a"></a><span lang=EN>If the technology we use in
 operating our business fails, is unavailable, or does not operate to
@@ -1036,7 +999,7 @@ subject us to liability, and to the extent that we need to alter our business
 model or practices to adapt to these obligations, we could incur additional
 expenses. </span></p>
 
-<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+<p class=MsoNormal><span lang=EN> </span></p>
 
 <h3><a name="_gw4nzesbyigr"></a><span lang=EN>Our reputation and relationships
 with members would be harmed if member personal information, particularly
@@ -1206,29 +1169,29 @@ that we face in the U.S., our international operations involve risks that could
 adversely affect our business, including: </span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>the need to adapt our content and user interfaces for specific cultural
 and language differences;difficulties and costs associated with staffing and
 managing foreign operations;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>political or social unrest, global hostilities, and economic
 instability;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>compliance with laws such as the Foreign Corrupt Practices Act, UK
 Bribery Act and other anti-corruption laws, export controls and economic
 sanctions, and local laws prohibiting corrupt payments to government officials;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>difficulties in understanding and complying with local laws,
 regulations and customs in foreign jurisdictions;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>regulatory requirements or government action, whether in response to
 enforcement of actual or purported legal and regulatory requirements or
 otherwise, that results in disruption or non-availability of our service or
@@ -1237,7 +1200,7 @@ criminal liability, or increased operating costs in the applicable
 jurisdiction;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>application of foreign intellectual property laws, which requires the
 business to adapt to bespoke compliance rules, or changes to such laws, among
 other issues, may impact the economics of creating or distributing content,
@@ -1245,7 +1208,7 @@ anti-piracy efforts, or our ability to protect or exploit intellectual property
 rights;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>adverse tax consequences such as those related to changes in tax laws
 or tax rates or their interpretations, and the related application of judgment
 in determining our global provision for income taxes, deferred tax assets or
@@ -1253,7 +1216,7 @@ liabilities or other tax liabilities given the ultimate tax determination is
 uncertain;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>fluctuations in currency exchange rates, which have and may continue to
 impact revenues and expenses of our international operations and expose us to
 foreign currency exchange rate risk, and while we use derivative and
@@ -1263,56 +1226,56 @@ offsetting an adverse financial impact and may introduce or heighten
 counterparty risk and we may choose not to hedge certain exposures;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>rates of inflation;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>profit repatriation, currency control regulations and other
 restrictions on the transfer of funds;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>differing payment processing systems as well as consumer use and
 acceptance of electronic payment methods, such as payment cards;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>new and different sources of competition;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>censorship requirements that cause us to remove or edit popular
 content, leading to consumer disappointment, brand tarnishment or
 dissatisfaction with our service;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>low usage and/or penetration of internet-connected consumer electronic
 devices;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>different and more stringent user protection, data protection, privacy
 and other laws, including data localization and/or restrictions on data export,
 and local ownership requirements;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>availability of reliable broadband connectivity and wide area networks
 in targeted areas for expansion;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>differing laws and consumer understanding/attitudes regarding the
 illegality of piracy;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>negative impacts from trade disputes and evolving trade policy; and</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>implementation of regulations designed to stimulate the local
 production of film and TV series in order to promote and preserve local culture
 and economic activity, including local content quotas, investment obligations,
@@ -1421,16 +1384,16 @@ in their current form may discourage, delay or prevent a merger or acquisition
 that a stockholder may consider favorable because they:</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>authorize our board of directors, without stockholder approval, to
 issue up to 10,000,000 shares of undesignated preferred stock;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>prohibit our stockholders from acting by written consent; and</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>establish advance notice requirements for proposing matters to be
 approved by stockholders at stockholder meetings.</span></p>
 
@@ -1455,51 +1418,51 @@ continue to be volatile due to a number of factors including the following,
 some of which are beyond our control:</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>variations in our operating results, including our membership
 acquisition and retention, revenues, operating income, net income, net cash
 provided by</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>operating activities and free cash flow;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>variations between our actual operating results and the expectations of
 securities analysts, investors and the financial community;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>announcements of developments affecting our business, including mergers
 and acquisitions, such as the WBD transaction, systems or expansion plans by us
 or others;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>competition, including the introduction of new competitors, their
 pricing strategies and services;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>market volatility in general;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>the level of demand for our stock, including the amount of short
 interest in our stock;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>the impact of our current stock repurchase program and any future stock
 repurchase program we may adopt;</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>the operating results of our competitors; and</span></p>
 
 <p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span lang=EN>●<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font:7.0pt "Times New Roman"'>     </span></span><span
 lang=EN>other risks and uncertainties described in these risk factors.</span></p>
 
 <p class=MsoNormal style='text-indent:.5in'><span lang=EN>As a result of these
@@ -1737,9 +1700,10 @@ incorporated herein by reference.</span></p>
 <p class=MsoNormal style='text-indent:.5in'><span lang=EN>Disclosures Not
 applicable. </span></p>
 
-<p class=MsoNormal style='text-indent:.5in'><span lang=EN>&nbsp;</span></p>
-
 <h1 id="part-ii"><span lang=EN>PART II</span></h1>
+
+<h2 id="risk-factors-related-to-wbd-cont"><span lang=EN>Risk Factors Related to the WBD
+Transaction (cont.)</span></h2>
 
 <p class=MsoNormal><b><span lang=EN>Item 5.             Market for Registrant’s
 Common Equity, Related Stockholder Matters and Issuer Purchases of Equity
@@ -1780,9 +1744,7 @@ Securities</span></h3>
 <p class=MsoNormal><span lang=EN>Stock repurchases during the three months
 ended December 31, 2025 were as follows:</span></p>
 
-<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
-
-<table class=table>
+<table>
  <tr style='background-color:#130000;'>
   <td valign=top style='width:1.75in;border:solid white 1.0pt;
   padding:5.0pt 5.0pt 5.0pt 5.0pt'>
@@ -1907,7 +1869,7 @@ ended December 31, 2025 were as follows:</span></p>
   <td valign=top style='width:85.5pt;border-top:none;border-left:
   none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
   padding:5.0pt 5.0pt 5.0pt 5.0pt'>
-  <p class=MsoNormal style='line-height:normal;border:none'><span lang=EN>&nbsp;</span></p>
+  <p class=MsoNormal style='line-height:normal;border:none'><span lang=EN> </span></p>
   </td>
   <td valign=top style='width:120.75pt;border-top:none;border-left:
   none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
@@ -1917,12 +1879,10 @@ ended December 31, 2025 were as follows:</span></p>
   <td valign=top style='width:128.25pt;border-top:none;border-left:
   none;border-bottom:solid white 1.0pt;border-right:solid white 1.0pt;
   padding:5.0pt 5.0pt 5.0pt 5.0pt'>
-  <p class=MsoNormal style='line-height:normal;border:none'><span lang=EN>&nbsp;</span></p>
+  <p class=MsoNormal style='line-height:normal;border:none'><span lang=EN> </span></p>
   </td>
  </tr>
 </table>
-
-<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN>(1) In September 2023, the Company’s Board of
 Directors authorized the repurchase of up to $10 billion of its common stock,
@@ -1936,46 +1896,1422 @@ this Annual Report. </span></p>
 costs associated with the repurchases but excludes the 1% excise tax on stock
 repurchases imposed by the Inflation Reduction Act of 2022. </span></p>
 
+<!-- /new data/ -->
+    <h2 class="c80" id="h.pk5wgv9rikpt">
+      <span class="c32"
+        >Item
+        7.        Management&rsquo;s
+        Discussion and Analysis of Financial Condition and Results of
+        Operations</span
+      >
+    </h2>
+    <p class="c147 c176">
+      <span class="c35 c20"
+        >This section of this Form 10-K generally discusses 2024 and 2023 items
+        and year-to-year comparisons between 2024 and 2023. Discussions of 2022
+        items and year-to-year comparisons between 2023 and 2022 that are not
+        included in this Form 10-K can be found in &quot;Management&#39;s
+        Discussion and Analysis of Financial Condition and Results of
+        Operations&quot; in Part II, Item 7 of the Company&#39;s Annual Report
+        on Form 10-K for the fiscal year ended December 31, 2023.</span
+      >
+    </p>
+    <h2 class="c146" id="h.c18wlda7gi2k">
+      <span class="c32">Results of Operations</span>
+    </h2>
+    <p class="c61">
+      <span class="c35 c20"
+        >The following represents our consolidated performance highlights:</span>
+    </p>
+   
+    <table class="c31 cost-revenues-table">
+      <tr class="c37 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c155" colspan="3" rowspan="1">
+          <p class="c91"><span class="c6">Year Ended December 31,</span></p>
+        </td>
+        <td class="c165" colspan="1" rowspan="1">
+          <p class="c142"><span class="c6">Change</span></p>
+        </td>
+      </tr>
+      <tr class="c104 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c188"><span class="c6">2024</span></p>
+        </td>
+        <td class="c136" colspan="1" rowspan="1">
+          <p class="c5 c106"><span class="c6">2023</span></p>
+        </td>
+        <td class="c7" colspan="1" rowspan="1">
+          <p class="c87"><span class="c6">2022</span></p>
+        </td>
+        <td class="c167" colspan="1" rowspan="1">
+          <p class="c5"><span class="c6">2024 vs. 2023</span></p>
+        </td>
+      </tr>
+      <tr class="c150 top3-center-row units-row">
+        <td class="c111" colspan="5" rowspan="1">
+          <p class="c177" style="padding-left: 373.64px"><span class="c6">(in thousands, except revenue per membership and percentages)</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c33" colspan="1" rowspan="1">
+          <p class="c25"><span class="c35 c138">Financial Results:</span></p>
+        </td>
+        <td class="c42 c168" colspan="4" rowspan="1"></td>
+      </tr>
+      <tr class="c23">
+        <td class="c78" colspan="1" rowspan="1">
+          <p class="c66"><span class="c35 c20">Streaming revenues</span></p>
+        </td>
+        <td class="c40" colspan="1" rowspan="1">
+          <p class="c135">
+            <span class="c0"
+              >$39,000,966</span
+            >
+          </p>
+        </td>
+        <td class="c26" colspan="1" rowspan="1">
+          <p class="c88">
+            <span class="c0"
+              >$33,640,458</span
+            >
+          </p>
+        </td>
+        <td class="c59" colspan="1" rowspan="1">
+          <p class="c88">
+            <span class="c0"
+              >$31,469,852</span
+            >
+          </p>
+        </td>
+        <td class="c75" colspan="1" rowspan="1">
+          <p class="c97"><span class="c0">16%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c33" colspan="1" rowspan="1">
+          <p class="c66"><span class="c35 c20">DVD revenues (1)</span></p>
+        </td>
+        <td class="c4" colspan="1" rowspan="1">
+          <p class="c127"><span class="c0">&mdash;</span></p>
+        </td>
+        <td class="c26 c42" colspan="1" rowspan="1">
+          <p class="c169"><span class="c0">82,839</span></p>
+        </td>
+        <td class="c59 c42" colspan="1" rowspan="1">
+          <p class="c133"><span class="c0">145,698</span></p>
+        </td>
+        <td class="c75 c42" colspan="1" rowspan="1">
+          <p class="c137"><span class="c0">(100)%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c78" colspan="1" rowspan="1">
+          <p class="c25"><span class="c35 c138">Total revenues</span></p>
+        </td>
+        <td class="c40" colspan="1" rowspan="1">
+          <p class="c182">
+            <span class="c35 c68"
+              >$        39,000,966</span
+            >
+          </p>
+        </td>
+        <td class="c26" colspan="1" rowspan="1">
+          <p class="c21">
+            <span class="c35 c68"
+              >$        33,723,297</span
+            >
+          </p>
+        </td>
+        <td class="c59" colspan="1" rowspan="1">
+          <p class="c21">
+            <span class="c35 c68"
+              >$        31,615,550</span
+            >
+          </p>
+        </td>
+        <td class="c75" colspan="1" rowspan="1">
+          <p class="c95"><span class="c0">16%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c78" colspan="1" rowspan="1">
+          <p class="c25"><span class="c35 c20">Operating income</span></p>
+        </td>
+        <td class="c40" colspan="1" rowspan="1">
+          <p class="c182">
+            <span class="c0"
+              >$10,417,614</span
+            >
+          </p>
+        </td>
+        <td class="c26" colspan="1" rowspan="1">
+          <p class="c21">
+            <span class="c0"
+              >$6,954,003</span
+            >
+          </p>
+        </td>
+        <td class="c59" colspan="1" rowspan="1">
+          <p class="c21">
+            <span class="c0"
+              >$5,632,831</span
+            >
+          </p>
+        </td>
+        <td class="c75" colspan="1" rowspan="1">
+          <p class="c95"><span class="c0">50%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c33" colspan="1" rowspan="1">
+          <p class="c66"><span class="c35 c20">Operating margin</span></p>
+        </td>
+        <td class="c4" colspan="1" rowspan="1">
+          <p class="c170"><span class="c0">27%</span></p>
+        </td>
+        <td class="c26 c42" colspan="1" rowspan="1">
+          <p class="c144"><span class="c0">21%</span></p>
+        </td>
+        <td class="c59 c42" colspan="1" rowspan="1">
+          <p class="c197"><span class="c0">18%</span></p>
+        </td>
+        <td class="c75 c42" colspan="1" rowspan="1"></td>
+      </tr>
+      
+      <tr class="c8">
+        <td class="c33" colspan="1" rowspan="1">
+          <p class="c25">
+            <span class="c35 c138">Global Streaming Memberships:</span>
+          </p>
+        </td>
+        <td class="c4" colspan="1" rowspan="1"></td>
+        <td class="c26 c42" colspan="1" rowspan="1"></td>
+        <td class="c59 c42" colspan="1" rowspan="1"></td>
+        <td class="c75 c42" colspan="1" rowspan="1"></td>
+      </tr>
+      <tr class="c23">
+        <td class="c78" colspan="1" rowspan="1">
+          <p class="c66">
+            <span class="c35 c20">Paid net membership additions</span>
+          </p>
+        </td>
+        <td class="c40" colspan="1" rowspan="1">
+          <p class="c152"><span class="c0">41,350</span></p>
+        </td>
+        <td class="c26" colspan="1" rowspan="1">
+          <p class="c194"><span class="c0">29,529</span></p>
+        </td>
+        <td class="c59" colspan="1" rowspan="1">
+          <p class="c5 c193"><span class="c0">8,903</span></p>
+        </td>
+        <td class="c75" colspan="1" rowspan="1">
+          <p class="c97"><span class="c0">40%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c33" colspan="1" rowspan="1">
+          <p class="c66">
+            <span class="c35 c20">Paid memberships at end of period (2)</span>
+          </p>
+        </td>
+        <td class="c4" colspan="1" rowspan="1">
+          <p class="c127"><span class="c0">301,626</span></p>
+        </td>
+        <td class="c26 c42" colspan="1" rowspan="1">
+          <p class="c187"><span class="c0">260,276</span></p>
+        </td>
+        <td class="c59 c42" colspan="1" rowspan="1">
+          <p class="c133"><span class="c0">230,747</span></p>
+        </td>
+        <td class="c75 c42" colspan="1" rowspan="1">
+          <p class="c137"><span class="c0">16%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c78" colspan="1" rowspan="1">
+          <p class="c25">
+            <span class="c35 c20">Average paying memberships</span>
+          </p>
+        </td>
+        <td class="c40" colspan="1" rowspan="1">
+          <p class="c185"><span class="c0">277,730</span></p>
+        </td>
+        <td class="c26" colspan="1" rowspan="1">
+          <p class="c85"><span class="c0">240,889</span></p>
+        </td>
+        <td class="c59" colspan="1" rowspan="1">
+          <p class="c134"><span class="c0">222,924</span></p>
+        </td>
+        <td class="c75" colspan="1" rowspan="1">
+          <p class="c95"><span class="c0">15%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c33" colspan="1" rowspan="1">
+          <p class="c66">
+            <span class="c35 c20"
+              >Average monthly revenue per paying membership</span
+            >
+          </p>
+        </td>
+        <td class="c4" colspan="1" rowspan="1">
+          <p class="c135">
+            <span class="c0"
+              >$        11.70</span
+            >
+          </p>
+        </td>
+        <td class="c26 c42" colspan="1" rowspan="1">
+          <p class="c88">
+            <span class="c0"
+              >$        11.64</span
+            >
+          </p>
+        </td>
+        <td class="c59 c42" colspan="1" rowspan="1">
+          <p class="c88">
+            <span class="c0"
+              >$        11.76</span
+            >
+          </p>
+        </td>
+        <td class="c75 c42" colspan="1" rowspan="1">
+          <p class="c97"><span class="c0">1%</span></p>
+        </td>
+      </tr>
+      <tr class="c69">
+        <td class="c78" colspan="1" rowspan="1">
+          <p class="c143">
+            <span class="c35 c20">Constant currency change (3)</span>
+          </p>
+        </td>
+        <td class="c40" colspan="1" rowspan="1"></td>
+        <td class="c26" colspan="1" rowspan="1"></td>
+        <td class="c59" colspan="1" rowspan="1"></td>
+        <td class="c75" colspan="1" rowspan="1">
+          <p class="c200"><span class="c0">4%</span></p>
+        </td>
+      </tr>
+    </table>
+    <ol class="c89 lst-kix_qu91gmrkh8ms-0 start" start="1">
+      <li class="c174">
+        <span class="c15"
+          >We discontinued our DVD-by-mail service in the year ended December
+          31, 2023. The discontinuance of our DVD business had an immaterial
+          impact on our operations and financial results.</span
+        >
+      </li>
+      <li class="c191">
+        <span class="c15"
+          >A paid membership (also referred to as a paid subscription) is
+          defined as a membership that has the right to receive Netflix service
+          following sign-up and a method of payment being provided, and that is
+          not part of a free trial or certain other promotions that may be
+          offered by the Company to new or rejoining members. Certain members
+          have the option to add extra member sub accounts. These extra member
+          sub accounts are not included in paid memberships. A membership is
+          canceled and ceases to be reflected in</span
+        >
+      </li>
+    </ol>
+    <p class="c199">
+      <span class="c15"
+        >the above metrics as of the effective cancellation date. Voluntary
+        cancellations generally become effective at the end of the prepaid
+        membership period. Involuntary cancellations, as a result of a failed
+        method of payment, become effective immediately. Memberships are
+        assigned to territories based on the geographic location used at time of
+        sign-up as determined by the Company&rsquo;s internal systems, which
+        utilize industry standard geo-location technology.</span
+      >
+    </p>
+    <ol class="c89 lst-kix_qu91gmrkh8ms-0" start="3">
+      <li class="c181">
+        <span class="c15"
+          >We believe the non-GAAP financial measure of constant currency
+          revenue is useful in analyzing the underlying trends in average
+          monthly revenue per paying membership (&ldquo;ARM&rdquo;) absent
+          foreign currency fluctuations. However, this non-GAAP financial
+          measure should be considered in addition to, not as a substitute for,
+          or superior to other financial measures prepared in accordance with
+          GAAP.</span
+        >
+      </li>
+    </ol>
+    <p class="c92">
+      <span class="c15"
+        >In order to exclude the effect of foreign currency rate fluctuations on
+        ARM, we calculate current period revenue assuming foreign exchange rates
+        had remained constant with foreign exchange rates from each of the
+        corresponding months of the prior-year period and exclude the impact of
+        hedging gains or losses realized as revenues. Constant currency
+        percentage change in ARM is calculated as the percentage change between
+        current period constant currency ARM and the prior comparative period
+        ARM. The impact of hedging gains or losses is excluded from both the
+        current and prior periods. For the year ended December 31, 2024, our
+        revenues would have been approximately $1,424 million higher, excluding
+        the impact of hedging and had foreign currency exchange rates remained
+        constant with those for the year ended December 31, 2023. The
+        unfavorable foreign</span
+      >
+    </p>
+    <p class="c172">
+      <span class="c15"
+        >exchange rate impacts in the year ended December 31, 2024 were
+        primarily driven by the devaluation of the Argentine peso relative to
+        the U.S. dollar coupled with significant price increases in the local
+        currency in this jurisdiction.</span
+      >
+    </p>
+    <p class="c122">
+      <span class="c35 c20"
+        >Operating margin for the year ended December 31, 2024 increased six
+        percentage points as compared to the prior comparative period, primarily
+        due to revenues growing at a faster rate as compared to the growth in
+        cost of revenues, sales and marketing, and technology and development
+        expenses, coupled with lower general and administrative expenses.</span
+      >
+    </p>
+    <h3 class="c80" id="h.tqflfaih92iw">
+      <span class="c22">Streaming Revenues</span>
+    </h3>
+    <p class="c98 c147">
+      <span class="c35 c20"
+        >We primarily derive revenues from monthly membership fees for services
+        related to streaming content to our members. We offer a variety of
+        streaming membership plans, the price of which varies by country and the
+        features of the plan. As of December 31, 2024, pricing on our paid plans
+        ranged from the U.S. dollar equivalent of $1 to $32 per month, and
+        pricing on our extra member sub accounts ranged from the U.S. dollar
+        equivalent of $2 to $8 per month. We expect that from time to time the
+        prices of our membership plans in each country may change and we may
+        test other plan and price variations.</span
+      >
+    </p>
+    <p class="c84">
+      <span class="c35 c20"
+        >We also earn revenue from advertisements presented on our streaming
+        service, consumer products, live events and various other sources.
+        Revenues earned from sources other than monthly membership fees were not
+        a material component of streaming revenues for the years ended December
+        31, 2024, 2023, and 2022.</span
+      >
+    </p>
+    <p class="c118">
+      <span class="c6"
+        >Year Ended December
+        31,        Change</span>
+    </p>
+    <p class="c124">
+      <span class="c6"
+        >2024        2023        2022        2024
+        vs. 2023</span
+      >
+    </p>
+   
+    </p>
+    <p class="c81">
+      <span class="c6">(in thousands, except percentages)</span
+      ><span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 767.73px;
+          height: 15.33px;
+        "
+        ><img
+          alt=""
+          src="images/image8.png"
+          style="
+            width: 767.73px;
+            height: 15.33px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <p class="c147 c156">
+      <span class="c35 c20"
+        >Streaming revenues for the year ended December 31, 2024 increased 16%
+        as compared to the year ended December 31, 2023, primarily due to the
+        growth in average paying memberships and price increases, partially
+        offset by unfavorable changes in foreign exchange rates.</span
+      >
+    </p>
+    <p class="c16">
+      <span class="c20"
+        >The following tables summarize streaming revenues and other streaming
+        membership information by region for the years ended December 31, 2024,
+        2023 and 2022. Hedging gains of $124 million are included in
+        &ldquo;Streaming revenues&rdquo; for the year ended December 31, 2024.
+        No hedging gains and losses were recognized as &ldquo;Streaming
+        revenues&rdquo; in the comparative prior year periods. See Note 7 </span
+      ><span class="c20 c51"
+        >Derivative Financial Instruments and Hedging Activities </span
+      ><span class="c35 c20"
+        >to the consolidated financial statements for further information
+        regarding the Company&rsquo;s derivative and non-derivative financial
+        instruments.</span
+      >
+    </p>
+    <h2 class="c80" id="h.y7xntg698hkt">
+      <span class="c32">United States and Canada (UCAN)</span>
+    </h2>
+   
+    <table class="c31 cost-revenues-table">
+      <tr class="c37 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c155" colspan="3" rowspan="1">
+          <p class="c91"><span class="c6">Year Ended December 31,</span></p>
+        </td>
+        <td class="c165" colspan="2" rowspan="1">
+          <p class="c142"><span class="c6">Change</span></p>
+        </td>
+      </tr>
+      <tr class="c104 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c188"><span class="c6">2024</span></p>
+        </td>
+        <td class="c136" colspan="1" rowspan="1">
+          <p class="c5 c106"><span class="c6">2023</span></p>
+        </td>
+        <td class="c7" colspan="1" rowspan="1">
+          <p class="c87"><span class="c6">2022</span></p>
+        </td>
+        <td class="c167" colspan="2" rowspan="1">
+          <p class="c5"><span class="c6">2024 vs. 2023</span></p>
+        </td>
+      </tr>
+      <tr class="c150 top3-center-row units-row">
+        <td class="c111" colspan="6" rowspan="1">
+          <p class="c177" style="padding-left: 373.64px"><span class="c6">(in thousands, except revenue per membership and percentages)</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46"><span class="c35 c20">Streaming revenues</span></p>
+        </td>
+        <td class="c27" colspan="1" rowspan="1">
+          <p class="c48">
+            <span class="c0"
+              >$17,359,369</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0"
+              >$14,873,783</span
+            >
+          </p>
+        </td>
+        <td class="c47 c42" colspan="1" rowspan="1">
+          <p class="c141">
+            <span class="c0"
+              >$14,084,643</span
+            >
+          </p>
+        </td>
+        <td class="c34" colspan="1" rowspan="1">
+          <p class="c82">
+            <span class="c0"
+              >$2,485,586</span
+            >
+          </p>
+        </td>
+        <td class="c55 c42" colspan="1" rowspan="1">
+          <p class="c49"><span class="c0">17%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20">Paid net membership additions (losses)</span>
+          </p>
+        </td>
+        <td class="c93" colspan="1" rowspan="1">
+          <p class="c54"><span class="c0">9,497</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c11"><span class="c0">5,832</span></p>
+        </td>
+        <td class="c47" colspan="1" rowspan="1">
+          <p class="c192"><span class="c0">(919)</span></p>
+        </td>
+        <td class="c154" colspan="1" rowspan="1">
+          <p class="c70"><span class="c0">3,665</span></p>
+        </td>
+        <td class="c55" colspan="1" rowspan="1">
+          <p class="c9"><span class="c0">63%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20">Paid memberships at end of period</span>
+          </p>
+        </td>
+        <td class="c27" colspan="1" rowspan="1">
+          <p class="c57"><span class="c0">89,625</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c2"><span class="c0">80,128</span></p>
+        </td>
+        <td class="c47 c42" colspan="1" rowspan="1">
+          <p class="c179"><span class="c0">74,296</span></p>
+        </td>
+        <td class="c34" colspan="1" rowspan="1">
+          <p class="c114"><span class="c0">9,497</span></p>
+        </td>
+        <td class="c55 c42" colspan="1" rowspan="1">
+          <p class="c53"><span class="c0">12%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20">Average paying memberships</span>
+          </p>
+        </td>
+        <td class="c93" colspan="1" rowspan="1">
+          <p class="c48"><span class="c0">84,112</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c3"><span class="c0">76,126</span></p>
+        </td>
+        <td class="c47" colspan="1" rowspan="1">
+          <p class="c141"><span class="c0">74,001</span></p>
+        </td>
+        <td class="c154" colspan="1" rowspan="1">
+          <p class="c82"><span class="c0">7,986</span></p>
+        </td>
+        <td class="c55" colspan="1" rowspan="1">
+          <p class="c49"><span class="c0">10%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20"
+              >Average monthly revenue per paying membership</span
+            >
+          </p>
+        </td>
+        <td class="c27" colspan="1" rowspan="1">
+          <p class="c54">
+            <span class="c0"
+              >$17.20</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c11">
+            <span class="c0"
+              >$16.28</span
+            >
+          </p>
+        </td>
+        <td class="c47 c42" colspan="1" rowspan="1">
+          <p class="c45">
+            <span class="c0"
+              >$15.86</span
+            >
+          </p>
+        </td>
+        <td class="c34" colspan="1" rowspan="1">
+          <p class="c70">
+            <span class="c0"
+              >$0.92</span
+            >
+          </p>
+        </td>
+        <td class="c42 c55" colspan="1" rowspan="1">
+          <p class="c9"><span class="c0">6%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20">Constant currency change</span>
+          </p> </td>
+         
+        <td class="c93" colspan="1" rowspan="1"></td>
+        <td class="c41" colspan="1" rowspan="1"></td>
+        <td class="c47" colspan="1" rowspan="1"></td>
+        <td class="c154" colspan="1" rowspan="1"></td>
+        <td class="c55" colspan="1" rowspan="1">
+          <p class="c53"><span class="c0">6%</span></p>
+        </td>
+      </tr>
+    </table> 
+    <h2 class="c120" id="h.knjis7t5btf">
+            <span class="c32">Europe, Middle East, and Africa (EMEA)</span>
+          </h2>
+
+    
+ 
+    <table class="c31 cost-revenues-table">
+      <tr class="c37 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c155" colspan="3" rowspan="1">
+          <p class="c91"><span class="c6">Year Ended December 31,</span></p>
+        </td>
+        <td class="c165" colspan="2" rowspan="1">
+          <p class="c142"><span class="c6">Change</span></p>
+        </td>
+      </tr>
+      <tr class="c104 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c188"><span class="c6">2024</span></p>
+        </td>
+        <td class="c136" colspan="1" rowspan="1">
+          <p class="c5 c106"><span class="c6">2023</span></p>
+        </td>
+        <td class="c7" colspan="1" rowspan="1">
+          <p class="c87"><span class="c6">2022</span></p>
+        </td>
+        <td class="c167" colspan="2" rowspan="1">
+          <p class="c5"><span class="c6">2024 vs. 2023</span></p>
+        </td>
+      </tr>
+      <tr class="c150 top3-center-row units-row">
+        <td class="c111" colspan="6" rowspan="1">
+          <p class="c177" style="padding-left: 373.64px"><span class="c6">(in thousands, except revenue per membership and percentages)</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46"><span class="c35 c20">Streaming revenues</span></p>
+        </td>
+        <td class="c27" colspan="1" rowspan="1">
+          <p class="c48">
+            <span class="c0"
+              >$12,387,035</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c48">
+            <span class="c0"
+              >$10,556,487</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0"
+              >$9,745,015</span
+            >
+          </p>
+        </td>
+        <td class="c126 c42" colspan="1" rowspan="1">
+          <p class="c151">
+            <span class="c0"
+              >$1,830,548</span
+            >
+          </p>
+        </td>
+        <td class="c55 c42" colspan="1" rowspan="1">
+          <p class="c163"><span class="c0">17%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20">Paid net membership additions</span>
+          </p>
+        </td>
+        <td class="c93" colspan="1" rowspan="1">
+          <p class="c54"><span class="c0">12,320</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c54"><span class="c0">12,084</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c11"><span class="c0">2,693</span></p>
+        </td>
+        <td class="c126" colspan="1" rowspan="1">
+          <p class="c86"><span class="c0">236</span></p>
+        </td>
+        <td class="c55" colspan="1" rowspan="1">
+          <p class="c94"><span class="c0">2%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20">Paid memberships at end of period</span>
+          </p>
+        </td>
+        <td class="c27" colspan="1" rowspan="1">
+          <p class="c57"><span class="c0">101,133</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c57"><span class="c0">88,813</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c2"><span class="c0">76,729</span></p>
+        </td>
+        <td class="c42 c126" colspan="1" rowspan="1">
+          <p class="c180"><span class="c0">12,320</span></p>
+        </td>
+        <td class="c55 c42" colspan="1" rowspan="1">
+          <p class="c79"><span class="c0">14%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20">Average paying memberships</span>
+          </p>
+        </td>
+        <td class="c93" colspan="1" rowspan="1">
+          <p class="c48"><span class="c0">94,200</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c48"><span class="c0">80,928</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c3"><span class="c0">73,904</span></p>
+        </td>
+        <td class="c126" colspan="1" rowspan="1">
+          <p class="c151"><span class="c0">13,272</span></p>
+        </td>
+        <td class="c55" colspan="1" rowspan="1">
+          <p class="c163"><span class="c0">16%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20"
+              >Average monthly revenue per paying membership</span
+            >
+          </p>
+        </td>
+        <td class="c27" colspan="1" rowspan="1">
+          <p class="c54">
+            <span class="c0"
+              >$10.96</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c54">
+            <span class="c0"
+              >$10.87</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c11">
+            <span class="c0"
+              >$10.99</span
+            >
+          </p>
+        </td>
+        <td class="c126 c42" colspan="1" rowspan="1">
+          <p class="c86">
+            <span class="c0"
+              >$0.09</span
+            >
+          </p>
+        </td>
+        <td class="c55 c42" colspan="1" rowspan="1">
+          <p class="c94"><span class="c0">1%</span></p>
+        </td>
+      </tr>
+      <tr class="c69">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c189">
+            <span class="c35 c20">Constant currency change</span>
+          </p>
+        </td>
+        <td class="c93" colspan="1" rowspan="1"></td>
+        <td class="c41" colspan="1" rowspan="1"></td>
+        <td class="c41" colspan="1" rowspan="1"></td>
+        <td class="c126" colspan="1" rowspan="1"></td>
+        <td class="c55" colspan="1" rowspan="1">
+          <p class="c102"><span class="c0">1%</span></p>
+        </td>
+      </tr>
+    </table>
+    <h2 class="c146" id="h.32thek7a14gx">
+      <span class="c32">Latin America (LATAM)</span>
+    </h2>
+
+    <table class="c31 cost-revenues-table">
+      <tr class="c37 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c155" colspan="3" rowspan="1">
+          <p class="c91"><span class="c6">Year Ended December 31,</span></p>
+        </td>
+        <td class="c165" colspan="2" rowspan="1">
+          <p class="c142"><span class="c6">Change</span></p>
+        </td>
+      </tr>
+      <tr class="c104 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c188"><span class="c6">2024</span></p>
+        </td>
+        <td class="c136" colspan="1" rowspan="1">
+          <p class="c5 c106"><span class="c6">2023</span></p>
+        </td>
+        <td class="c7" colspan="1" rowspan="1">
+          <p class="c87"><span class="c6">2022</span></p>
+        </td>
+        <td class="c167" colspan="2" rowspan="1">
+          <p class="c5"><span class="c6">2024 vs. 2023</span></p>
+        </td>
+      </tr>
+      <tr class="c150 top3-center-row units-row">
+        <td class="c111" colspan="6" rowspan="1">
+          <p class="c177" style="padding-left: 389.07px"><span class="c6">(in thousands, except revenue per membership and percentages)</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46"><span class="c35 c20">Streaming revenues</span></p>
+        </td>
+        <td class="c39" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0"
+              >$4,839,816</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0"
+              >$4,446,461</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c67">
+            <span class="c0"
+              >$4,069,973</span
+            >
+          </p>
+        </td>
+        <td class="c30 c42" colspan="1" rowspan="1">
+          <p class="c105">
+            <span class="c0"
+              >$393,355</span
+            >
+          </p>
+        </td>
+        <td class="c38 c42" colspan="1" rowspan="1">
+          <p class="c49"><span class="c0">9%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20">Paid net membership additions</span>
+          </p>
+        </td>
+        <td class="c99" colspan="1" rowspan="1">
+          <p class="c11"><span class="c0">7,330</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c54"><span class="c0">4,298</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c52"><span class="c0">1,738</span></p>
+        </td>
+        <td class="c30" colspan="1" rowspan="1">
+          <p class="c107"><span class="c0">3,032</span></p>
+        </td>
+        <td class="c38" colspan="1" rowspan="1">
+          <p class="c9"><span class="c0">71%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20">Paid memberships at end of period</span>
+          </p>
+        </td>
+        <td class="c39" colspan="1" rowspan="1">
+          <p class="c2"><span class="c0">53,327</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c12"><span class="c0">45,997</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c12"><span class="c0">41,699</span></p>
+        </td>
+        <td class="c30 c42" colspan="1" rowspan="1">
+          <p class="c121"><span class="c0">7,330</span></p>
+        </td>
+        <td class="c38 c42" colspan="1" rowspan="1">
+          <p class="c53"><span class="c0">16%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20">Average paying memberships</span>
+          </p>
+        </td>
+        <td class="c99" colspan="1" rowspan="1">
+          <p class="c3"><span class="c0">48,954</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c67"><span class="c0">42,802</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c67"><span class="c0">40,000</span></p>
+        </td>
+        <td class="c30" colspan="1" rowspan="1">
+          <p class="c105"><span class="c0">6,152</span></p>
+        </td>
+        <td class="c38" colspan="1" rowspan="1">
+          <p class="c49"><span class="c0">14%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20"
+              >Average monthly revenue per paying membership</span
+            >
+          </p>
+        </td>
+        <td class="c39" colspan="1" rowspan="1">
+          <p class="c11">
+            <span class="c0"
+              >$8.24</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c11">
+            <span class="c0"
+              >$8.66</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c52">
+            <span class="c0"
+              >$8.48</span
+            >
+          </p>
+        </td>
+        <td class="c30 c42" colspan="1" rowspan="1">
+          <p class="c74">
+            <span class="c0"
+              >$(0.42)</span
+            >
+          </p>
+        </td>
+        <td class="c38 c42" colspan="1" rowspan="1">
+          <p class="c9"><span class="c0">(5)%</span></p>
+        </td>
+      </tr>
+    </table>
+    <p class="c108">
+      <span class="c20"
+        >Constant currency change </span
+      ><span class="c0">21%</span>
+    </p>
+    <h2 class="c80" id="h.3g1bik3rilvb">
+      <span class="c32">Asia-Pacific (APAC)</span>
+    </h2>
+ 
+    <table class="c31 cost-revenues-table">
+      <tr class="c37 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c155" colspan="3" rowspan="1">
+          <p class="c91"><span class="c6">Year Ended December 31,</span></p>
+        </td>
+        <td class="c165" colspan="2" rowspan="1">
+          <p class="c142"><span class="c6">Change</span></p>
+        </td>
+      </tr>
+      <tr class="c104 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c188"><span class="c6">2024</span></p>
+        </td>
+        <td class="c136" colspan="1" rowspan="1">
+          <p class="c5 c106"><span class="c6">2023</span></p>
+        </td>
+        <td class="c7" colspan="1" rowspan="1">
+          <p class="c87"><span class="c6">2022</span></p>
+        </td>
+        <td class="c167" colspan="2" rowspan="1">
+          <p class="c5"><span class="c6">2024 vs. 2023</span></p>
+        </td>
+      </tr>
+      <tr class="c150 top3-center-row units-row">
+        <td class="c111" colspan="6" rowspan="1">
+          <p class="c177" style="padding-left: 389.07px"><span class="c6">(in thousands, except revenue per membership and percentages)</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46"><span class="c35 c20">Streaming revenues</span></p>
+        </td>
+        <td class="c39" colspan="1" rowspan="1">
+          <p class="c2">
+            <span class="c0"
+              >$4,414,746</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c2">
+            <span class="c0"
+              >$3,763,727</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c12">
+            <span class="c0"
+              >$3,570,221</span
+            >
+          </p>
+        </td>
+        <td class="c30 c42" colspan="1" rowspan="1">
+          <p class="c121">
+            <span class="c0"
+              >$651,019</span
+            >
+          </p>
+        </td>
+        <td class="c38 c42" colspan="1" rowspan="1">
+          <p class="c53"><span class="c0">17%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20">Paid net membership additions</span>
+          </p>
+        </td>
+        <td class="c99" colspan="1" rowspan="1">
+          <p class="c3"><span class="c0">12,203</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c48"><span class="c0">7,315</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c67"><span class="c0">5,391</span></p>
+        </td>
+        <td class="c30" colspan="1" rowspan="1">
+          <p class="c105"><span class="c0">4,888</span></p>
+        </td>
+        <td class="c38" colspan="1" rowspan="1">
+          <p class="c49"><span class="c0">67%</span></p>
+        </td>
+      </tr>
+      <tr class="c8">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c72">
+            <span class="c35 c20">Paid memberships at end of period</span>
+          </p>
+        </td>
+        <td class="c39" colspan="1" rowspan="1">
+          <p class="c11"><span class="c0">57,541</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c52"><span class="c0">45,338</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c52"><span class="c0">38,023</span></p>
+        </td>
+        <td class="c30 c42" colspan="1" rowspan="1">
+          <p class="c107"><span class="c0">12,203</span></p>
+        </td>
+        <td class="c38 c42" colspan="1" rowspan="1">
+          <p class="c9"><span class="c0">27%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c20 c35">Average paying memberships</span>
+          </p>
+        </td>
+        <td class="c99" colspan="1" rowspan="1">
+          <p class="c2"><span class="c0">50,466</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c12"><span class="c0">41,033</span></p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c12"><span class="c0">35,019</span></p>
+        </td>
+        <td class="c30" colspan="1" rowspan="1">
+          <p class="c121"><span class="c0">9,433</span></p>
+        </td>
+        <td class="c38" colspan="1" rowspan="1">
+          <p class="c53"><span class="c0">23%</span></p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c14 c42" colspan="1" rowspan="1">
+          <p class="c46">
+            <span class="c35 c20"
+              >Average monthly revenue per paying membership</span
+            >
+          </p>
+        </td>
+        <td class="c39" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0"
+              >$7.29</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c3">
+            <span class="c0"
+              >$7.64</span
+            >
+          </p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c67">
+            <span class="c0"
+              >$8.50</span
+            >
+          </p>
+        </td>
+        <td class="c30 c42" colspan="1" rowspan="1">
+          <p class="c145">
+            <span class="c0"
+              >$(0.35)</span
+            >
+          </p>
+        </td>
+        <td class="c38 c42" colspan="1" rowspan="1">
+          <p class="c49"><span class="c0">(5)%</span></p>
+        </td>
+      </tr>
+      <tr class="c69">
+        <td class="c14" colspan="1" rowspan="1">
+          <p class="c189">
+            <span class="c35 c20">Constant currency change</span>
+          </p>
+        </td>
+        <td class="c99" colspan="1" rowspan="1"></td>
+        <td class="c41" colspan="1" rowspan="1"></td>
+        <td class="c41" colspan="1" rowspan="1"></td>
+        <td class="c30" colspan="1" rowspan="1"></td>
+        <td class="c38" colspan="1" rowspan="1">
+          <p class="c103"><span class="c0">(3)%</span></p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="c80" id="h.omqu35gzj44y">
+      <span class="c22">Cost of Revenues</span>
+    </h3>
+    <p class="c140">
+      <span class="c35 c20"
+        >Cost of revenues primarily consists of the amortization of content
+        assets. Other costs of revenues include expenses associated with the
+        acquisition, licensing and production of content, streaming delivery
+        costs, and other operating costs.</span
+      >
+    </p>
+    <p class="c56">
+      <span class="c35 c20"
+        >Expenses related to the acquisition, licensing and production of
+        content not included in content amortization may include payroll,
+        stock-based compensation, facilities, and other personnel-related
+        expenses, costs associated with obtaining rights to music included in
+        our content, overall deals with talent, miscellaneous production-related
+        costs and participations and residuals. Streaming delivery costs are
+        primarily related to our global content delivery network (&ldquo;Open
+        Connect&rdquo;). We have built our own Open Connect network to help us
+        efficiently stream a high volume of content to our members over the
+        internet.</span
+      >
+    </p>
+    <p class="c98">
+      <span class="c35 c20"
+        >Delivery expenses, therefore, include equipment costs related to Open
+        Connect, payroll and related personnel expenses and all third-party
+        costs, such as cloud computing costs, associated with delivering content
+        over the internet. Other operating costs include customer service and
+        payment processing fees, including those we pay to our integrated
+        payment partners, as well as other costs directly incurred in making our
+        content available to members.</span
+      >
+    </p>
+    <table class="c31 cost-revenues-table">
+      <tr class="c37 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c155" colspan="3" rowspan="1">
+          <p class="c91"><span class="c6">Year Ended December 31,</span></p>
+        </td>
+        <td class="c165" colspan="3" rowspan="1">
+          <p class="c142"><span class="c6">Change</span></p>
+        </td>
+      </tr>
+      <tr class="c104 top3-center-row top2-underline-row">
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c24"><span class="c35 c58"></span></p>
+        </td>
+        <td class="c161" colspan="1" rowspan="1">
+          <p class="c188"><span class="c6">2024</span></p>
+        </td>
+        <td class="c136" colspan="1" rowspan="1">
+          <p class="c5 c106"><span class="c6">2023</span></p>
+        </td>
+        <td class="c7" colspan="1" rowspan="1">
+          <p class="c87"><span class="c6">2022</span></p>
+        </td>
+        <td class="c167" colspan="3" rowspan="1">
+          <p class="c5"><span class="c6">2024 vs. 2023</span></p>
+        </td>
+      </tr>
+      <tr class="c150 top3-center-row units-row">
+        <td class="c111" colspan="8" rowspan="1">
+          <p class="c177" style="padding-left: 268.25px">
+            <span class="c6">(in thousands, except percentages)</span>
+          </p>
+        </td>
+      </tr>
+      <tr class="c23">
+        <td class="c42 c123" colspan="1" rowspan="1">
+          <p class="c164"><span class="c35 c20">Cost of revenues</span></p>
+        </td>
+        <td class="c41 c42" colspan="1" rowspan="1">
+          <p class="c18">
+            <span class="c0"
+              >$21,038,464</span
+            >
+          </p>
+        </td>
+        <td class="c30 c42" colspan="1" rowspan="1">
+          <p class="c60">
+            <span class="c0"
+              >$19,715,368</span
+            >
+          </p>
+        </td>
+        <td class="c42 c100" colspan="1" rowspan="1">
+          <p class="c83">
+            <span class="c0"
+              >$19,168,285</span
+            >
+          </p> 
+        </td>
+        <td class="c131 c42" colspan="1" rowspan="1">
+          <p class="c171" style="padding-left: 20px;"><span class="c0">$1,323,096</span></p>
+        </td>
+        <td class="c42 c173" colspan="1" rowspan="1">
+          <p class="c130"><span class="c0">7%</span></p>
+        </td>
+      </tr>
+      <tr class="c69">
+        <td class="c123" colspan="1" rowspan="1">
+          <p class="c132">
+            <span class="c35 c20">As a percentage of revenues</span>
+          </p>
+        </td>
+        <td class="c41" colspan="1" rowspan="1">
+          <p class="c101"><span class="c0">54%</span></p>
+        </td>
+        <td class="c30" colspan="1" rowspan="1">
+          <p class="c190"><span class="c0">58%</span></p>
+        </td>
+        <td class="c100" colspan="3" rowspan="1">
+          <p class="c196"><span class="c0">61%</span></p>
+        </td>
+        <td class="c131" colspan="1" rowspan="1"></td>
+        <td class="c173" colspan="1" rowspan="1"></td>
+      </tr>
+    </table>
+    <p class="c147 c149">
+      <span class="c35 c20"
+        >The increase in cost of revenues for the year ended December 31, 2024
+        as compared to the year ended December 31, 2023 was due to a $1,104
+        million increase in content amortization relating to our existing and
+        new content.</span
+      >
+    </p>
+    
+
+
 </div>
 
   </Container>
 </Layout>
 
 <style>
-  .top {
-    font-size: 11pt;
-  }
-  
-  .topsub{
-    font-size:10.75px;
-  }
+td p{
+  font-size: 14.5px;
+  padding: 5px;
+}
 
-  .toc a {
-    color:        #B81D24;
-  }
+.cost-revenues-table .top3-center-row {
+  background-color: var(--color-background) !important;
+  color: #fff;
+  text-align: center;
+  padding-top:0
+}
 
-  .toc a:hover {
-    color: #8b171d
-  }
+.cost-revenues-table .top3-center-row * {
+  color: #fff;
+}
 
-  .toc a:visited{
-    color: #741212
-  }
+.cost-revenues-table .top2-underline-row td {
+  position: relative;
+  border-bottom: none !important;
+}
 
-  .table {
-    border-color: white;
-  }
+.cost-revenues-table .top2-underline-row td:has(span:not(:empty))::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 0;
+  border-bottom: 2px solid #fff;
+}
 
-  .title h1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 110px;
-  }
-
-  .title h1 img{
-    width: 700px;
-    padding-top: 75px;
-  }
+.cost-revenues-table .units-row p {
+  padding-left: 0;
+  text-align: center;
+}
 </style>

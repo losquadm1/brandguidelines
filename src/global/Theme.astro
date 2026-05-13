@@ -15,7 +15,7 @@ import "@fontsource/karla";
 }
   /* We can use this style tag to set up colors, fonts, etc. */
   :root {
-    --color-background: rgb(0, 0, 0);
+    --color-background: #090909;
     --color-text: rgb(240, 240, 240);
     --color-accent: #B81D24;
     --color-focus-ring: rgb(255, 255, 255);
@@ -23,10 +23,10 @@ import "@fontsource/karla";
     --font-body: "NetflixSans", sans-serif;
     --font-headings: "Bebas Neue", sans-serif;
 
-    font-size: 19px;
+    font-size: 17px;
 
     /* These sizes are used by the Container component to set up the page container */
-    --size-page-width: 800px;
+    --size-page-width: 850px;
     --size-page-padding: 1rem;
   }
 
@@ -68,5 +68,27 @@ import "@fontsource/karla";
     line-height: 1.55;
     padding-top: 10px;
     padding-bottom: 5px;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: none !important;
+  }
+
+  table tr {
+    border: none !important;
+  }
+
+  table tr:nth-child(even) {
+    background-color: rgba(112, 0, 0, 0.65) !important;
+  }
+
+  table tr:nth-child(odd) {
+    background-color: #090909 !important;
+  }
+
+  table td,
+  table th {
+    border: none !important;
   }
 </style>
