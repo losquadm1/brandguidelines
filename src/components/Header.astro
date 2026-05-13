@@ -69,6 +69,8 @@
         tocList.appendChild(item);
     });
 
+    const headerSection = document.querySelector('.header');
+    const tocSection = document.querySelector('.toc');
     const tocDetails = document.querySelector('.toc-panel') as HTMLDetailsElement | null;
     const tocSummary = tocDetails?.querySelector('summary');
     let keyboardNavigationActive = false;
@@ -85,6 +87,33 @@
         tocSummary.addEventListener('focus', () => {
             if (keyboardNavigationActive) {
                 tocDetails.open = true;
+            }
+        });
+    }
+
+    if (tocDetails && tocList) {
+        tocList.addEventListener('click', (event) => {
+            const target = event.target as HTMLElement | null;
+            if (target?.closest('a')) {
+                tocDetails.open = false;
+            }
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!tocDetails.open) {
+                return;
+            }
+
+            const target = event.target as Node | null;
+            if (!target) {
+                return;
+            }
+
+            const clickedInHeader = headerSection?.contains(target) ?? false;
+            const clickedInToc = tocSection?.contains(target) ?? false;
+
+            if (!clickedInHeader && !clickedInToc) {
+                tocDetails.open = false;
             }
         });
     }
